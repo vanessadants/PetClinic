@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.example.petclinic.repository;
 
 import java.util.Optional;
 

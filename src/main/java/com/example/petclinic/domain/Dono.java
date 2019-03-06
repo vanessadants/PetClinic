@@ -11,7 +11,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Dono extends Pessoa{
+public class Dono{
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

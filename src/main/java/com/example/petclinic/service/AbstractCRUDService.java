@@ -13,5 +13,5 @@ public interface AbstractCRUDService<T> {
     void delete(T object);
 
     void deleteById(Long id);
-	
+    
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'dono')}">
+
+  <body>
+
+    <h2>dono</h2>
+
+    <table id="vets" class="table table-striped">
+        <thead>
+        <tr>
+        	<th style="width: 150px;">Id</th>
+            <th style="width: 150px;">Nome</th>
+    
+            
+        </tr>
+        </thead>
+        <tbody>
+          <tr th:each="dono : ${donos}">
+          	  <td>
+                  <a th:text="${dono.id}"/></a>
+              </td>
+              <td>
+                  <a th:text="${dono.pessoa.nome}"/></a>
+              </td>
+             
+          </tr>
+        </tbody>
+    </table>
+
+  </body>
+</html>

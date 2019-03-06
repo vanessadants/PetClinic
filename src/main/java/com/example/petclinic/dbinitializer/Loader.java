@@ -3,7 +3,6 @@ package com.example.petclinic.dbinitializer;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.example.petclinic.domain.Dono;
 import com.example.petclinic.service.DonoService;
 
 @Component

@@ -6,8 +6,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "animal")
 public class Animal {
 	
 	@Id
@@ -21,8 +23,8 @@ public class Animal {
 	private Raca raca;
 	
 	@ManyToOne
-	@JoinColumn(name = "id_pessoa")
-	private Pessoa pessoa;
+	@JoinColumn(name = "id_dono")
+	private Dono dono;
 	
 	public Long getId() {
 		return id;
@@ -48,12 +50,14 @@ public class Animal {
 		this.raca = raca;
 	}
 
-	public Pessoa getPessoa() {
-		return pessoa;
+	public Dono getDono() {
+		return dono;
 	}
 
-	public void setPessoa(Pessoa pessoa) {
-		this.pessoa = pessoa;
+	public void setDono(Dono dono) {
+		this.dono = dono;
 	}
+
+	
 	
 }
